@@ -1,19 +1,18 @@
 # user input financial data
-monthy_income = float(input("Enter your monthly income:"))
-monthly_expenses = float(input("Enter your total monthly expenses:"))
+monthy_income = int(input("Enter your monthly income:"))
+monthly_expenses = int(input("Enter your total monthly expenses:"))
 
 # calculate monthly savings
-monthly_savings = monthy_income-monthly_expenses
-print(f"Your monthly savings are: ${monthly_savings:.2f}")
+monthly_savings = monthy_income - monthly_expenses
+
 
 # interest rate
 interest_rate = 0.05
 
 # project annual savings
-# projected_savings = monthly_savings * 12 + \
-#     (monthly_savings * 12 * interest_rate)
+projected_savings = monthly_savings * 12 + monthly_savings * 12 * interest_rate
 
-annual_savings = monthly_savings * 12
-projected_savings = annual_savings + (annual_savings * interest_rate)
+# Output
+print(f"Your monthly savings are: ${monthly_savings:}")
 print(
-    f"Projected savings after one year, with interest, is: ${projected_savings:.2f}")
+    f"Projected savings after one year, with interest, is: ${projected_savings:}")
