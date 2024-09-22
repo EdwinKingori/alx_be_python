@@ -1,5 +1,5 @@
 # userinput
 number = int(input("Enter a number to see its multiplication table:"))
-for i in range(1, 11):
-    result = i * number
-    print(f"{i} * {number} = {result}")
+for x in range(1, 11):
+    result = x * number
+    print(f"{x} * {number} = {result}")
