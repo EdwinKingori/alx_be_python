@@ -1,10 +1,9 @@
 # prompt for a singe task
 task = input("Enter your task: ")
-priority = input("Priority (high/medium/low): ")
-time_bound = input("Is it time_bound? (yes/no): ")
-
-# process task based on priority
-
+priority = input("Priority (high/medium/low): ").lower()
+time_bound = input("Is it time-bound? (yes/no): ").lower()
+# Use a Match Case statement to react differently based on the task’s priority.
+# Within the Match Case or after, use an if statement to modify the reminder if the task is time-bound.
 match priority:
     case "high":
         reminder = f"{task} is a high priority task "
