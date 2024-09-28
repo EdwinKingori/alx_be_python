@@ -9,6 +9,6 @@ def perform_operation(num1, num2, operation):
         if num2 != 0:
             return num1 / num2
         else:
-            print("Number not divisible by o!")
+            print("Number not divisible by zero!")
     else:
         return "Operation provided not recognized! Available operations include: add, subract, multiply and divide"
