@@ -1,3 +1,7 @@
+
+shopping_list = []
+
+
 def display_menu():
     print("Shopping List Manager")
     print("1. Add Item")
@@ -6,13 +10,13 @@ def display_menu():
     print("4. Exit")
 
 
-def add_item(shopping_list):
-    item = input("Enter the item name to add: ").
+def add_item():
+    item = input("Enter the item to add: ").
     shopping_list.append(item)
     print(f"{item} added successfully!")
 
 
-def remove_item(shopping_list):
+def remove_item():
     item = input("Enter item name to remove: ")
     if item in shopping_list:
         shopping_list.remove(item)
@@ -21,7 +25,7 @@ def remove_item(shopping_list):
         print(f"{item} not found!")
 
 
-def view_list(shopping_list):
+def view_list():
     for index, items in enumerate(shopping_list):
         print(f"{index}: {items}")
 
