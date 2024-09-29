@@ -23,4 +23,4 @@ elif which_temp == "F":
     f_temp = convert_to_celsius(temp)
     print(f"{temp}°F is equal to {f_temp :.2f}°C.")
 else:
-    print("Invalid input. Please specify whether temp is Celcius 'C' or fahrenheit 'F'!")
+    print("Invalid temperature. Please enter a numeric value.")
