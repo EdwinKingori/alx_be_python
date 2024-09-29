@@ -7,15 +7,18 @@ def display_menu():
 
 
 def add_item(shopping_list):
-    item_name = input("Enter the item name to add: ")
-    shopping_list.append(item_name)
-    print("Item add successfully!")
+    item = input("Enter the item name to add: ").
+    shopping_list.append(item)
+    print(f"{item} added successfully!")
 
 
 def remove_item(shopping_list):
-    item_name_remove = input("Enter item name to remove: ")
-    shopping_list.remove(item_name_remove)
-    print("Item removed successfully!")
+    item = input("Enter item name to remove: ")
+    if item in shopping_list:
+        shopping_list.remove(item)
+        print(f"{item} removed successfully!")
+    else:
+        print(f"{item} not found!")
 
 
 def view_list(shopping_list):
