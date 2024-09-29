@@ -7,7 +7,7 @@ def display_menu():
 
 
 def add_item(shopping_list):
-    item_name = input("Enter item name to add: ")
+    item_name = input("Enter the item name to add: ")
     shopping_list.append(item_name)
     print("Item add successfully!")
 
