@@ -9,3 +9,9 @@ product = number1 * number2
 
 # output
 print(f"sum:{sum},subtraction:{subtraction},product:{product}")
+
+
+a = {"msg": "Hello World!"}
+
+country = {"Kenya": "Nairobi", "ug": "Kampala", "Kenya": "Mombasa"}
+print(f"{country}")
