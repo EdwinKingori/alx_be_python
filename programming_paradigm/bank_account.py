@@ -16,9 +16,9 @@ class BankAccount:
                 # print(f"Withdrawn amount is: ${amount:.2f}")
                 # print(f"Your balance is {self.__account_balance:.2f}")
 
-            else:
-                print("Insufficient funds.")
-                return False
+            # else:
+            #     print("Insufficient funds.")
+            #     return False
         else:
             print("Insufficient funds.")
             return False
