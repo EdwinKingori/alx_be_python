@@ -6,18 +6,18 @@ class BankAccount:
     def deposit(self, amount):
         if amount > 0:
             self.__account_balance += amount
-            print(f"Deposited: ${amount:.2f}")
+            print(f"Deposited: ${amount:.1f}")
 
     def withdraw(self, amount):
         if amount > 0:
             if amount <= self.__account_balance:
                 self.__account_balance -= amount
-                print("Withdrew: ${amount:.2f}")
+                print(f"Withdrew: ${amount:.2f}")
                 # print(f"Withdrawn amount is: ${amount:.2f}")
                 # print(f"Your balance is {self.__account_balance:.2f}")
                 return True
             else:
-                print("insufficient funds.")
+                print("Insufficient funds.")
                 return False
         else:
             print("Insufficient funds.")
