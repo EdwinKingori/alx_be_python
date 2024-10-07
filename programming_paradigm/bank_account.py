@@ -17,7 +17,6 @@ class BankAccount:
             # print(f"Your balance is {self.__account_balance:.2f}")
 
         else:
-            print("Insufficient funds.")
             return False
 
     def display_balance(self):
